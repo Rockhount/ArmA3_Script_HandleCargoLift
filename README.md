@@ -17,7 +17,7 @@ A few weeks ago a buddy asked me to write a script for a helicopter to lift and 
 
 ##Media
 ###Showcase #1
-[![Showcase #1](https://i.ytimg.com/vi/M2ybK0lpJ94/sddefault.jpg)](https://www.youtube.com/watch?v=M2ybK0lpJ94?t=35s " ")
+[![Showcase #1](https://i.ytimg.com/vi/M2ybK0lpJ94/sddefault.jpg)](https://www.youtube.com/watch?v=M2ybK0lpJ94)
 
 
 ###Showcase #2
