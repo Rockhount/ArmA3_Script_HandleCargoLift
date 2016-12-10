@@ -1,10 +1,10 @@
 # ArmA 3 Script HandleCargoLift
 <p align="center">
-  <img src="Screenshots/handleCargoLift1.jpg">
+  <img src="Screenshots/HandleCargoLift1.jpg">
 </p>
 
 <p align="center">
-  <img src="Screenshots/handleCargoLift2.jpg">
+  <img src="Screenshots/HandleCargoLift2.jpg">
 </p>
 
 #Support
