@@ -1,0 +1,193 @@
+version=52;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=513;
+	class ItemIDProvider
+	{
+		nextID=5;
+	};
+	class Camera
+	{
+		pos[]={5402.2886,101.29581,17903.57};
+		dir[]={0.48260885,-0.75226766,0.44854492};
+		up[]={0.55102628,0.6588549,0.51213336};
+		aside[]={0.68078768,7.3756382e-008,-0.73248863};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Characters_F",
+	"A3_Soft_F_MRAP_01",
+	"A3_Air_F_Heli_Heli_Transport_03"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=3;
+		class Item0
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Soft_F";
+			name="Arma 3 Alpha - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item2
+		{
+			className="A3_Air_F_Heli";
+			name="Arma 3 Helicopters - Aircrafts";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+	};
+};
+randomSeed=6728675;
+class ScenarioData
+{
+	author="Rockhount";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=4;
+		class Item0
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5412.6221,76.784676,17913.951};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						init="nul = [""B_Heli_Transport_03_F"", ""B_Helipilot_F"", [6292,18553,50], west, 50, [Truck1,Truck2], [4172,16964,0], 10, [282,20880,0], false, true, ""CargoHeli1""] execVM ""HandleCargoLift.sqf"";";
+						name="Player1";
+						isPlayer=1;
+					};
+					id=1;
+					type="B_Soldier_F";
+					atlOffset=-7.6293945e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=0;
+			atlOffset=-7.6293945e-006;
+		};
+		class Item1
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5420.8618,78.950516,17918.105};
+				angles[]={6.2126393,0,0.014660765};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="Truck1";
+			};
+			id=2;
+			type="B_MRAP_01_F";
+		};
+		class Item2
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5419.1455,78.720627,17902.125};
+				angles[]={6.256525,0,6.2671871};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="Truck2";
+			};
+			id=3;
+			type="B_MRAP_01_F";
+			atlOffset=-9.1552734e-005;
+		};
+		class Item3
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5508.4941,159.53909,18006.027};
+				angles[]={0,4.058135,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				presence=0;
+			};
+			id=4;
+			type="B_Heli_Transport_03_F";
+			atlOffset=49.403999;
+		};
+	};
+};

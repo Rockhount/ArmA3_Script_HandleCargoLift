@@ -1,0 +1,368 @@
+version=52;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=65;
+	class ItemIDProvider
+	{
+		nextID=17;
+	};
+	class Camera
+	{
+		pos[]={2167.6794,141.54662,1542.6423};
+		dir[]={-0.53754783,-0.81280297,-0.22505748};
+		up[]={-0.74985385,0.58237928,-0.31395003};
+		aside[]={-0.38624439,-2.8165523e-006,0.92252856};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Characters_F",
+	"A3_Air_F_Heli_Heli_Transport_03",
+	"A3_Soft_F_MRAP_01"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=3;
+		class Item0
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Air_F_Heli";
+			name="Arma 3 Helicopters - Aircrafts";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item2
+		{
+			className="A3_Soft_F";
+			name="Arma 3 Alpha - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+	};
+};
+randomSeed=9292477;
+class ScenarioData
+{
+	author="Rockhount";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		day=28;
+		hour=13;
+		minute=37;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=5;
+		class Item0
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2097.1631,5.0014391,1491.8671};
+						angles[]={0,4.8929777,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						init="nul = [""B_Heli_Transport_03_F"", ""B_Pilot_F"", [1808,1488,50], west, 50, [Truck1,Truck2], [2093,1890,0], 10, [2095,1092,0], false] execVM ""HandleCargoLift.sqf"";";
+						isPlayer=1;
+					};
+					id=1;
+					type="B_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=0;
+		};
+		class Item1
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2032.418,55.001438,1478.5601};
+						angles[]={0,1.5312297,0};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+					};
+					id=10;
+					type="B_Helipilot_F";
+					atlOffset=50;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2032.418,55.001438,1478.5601};
+						angles[]={0,1.5312297,0};
+					};
+					side="West";
+					class Attributes
+					{
+					};
+					id=11;
+					type="B_Helipilot_F";
+					atlOffset=50;
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2032.418,55.001438,1478.5601};
+						angles[]={0,1.5312297,0};
+					};
+					side="West";
+					class Attributes
+					{
+					};
+					id=12;
+					type="B_helicrew_F";
+					atlOffset=50;
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2032.418,55.001438,1478.5601};
+						angles[]={0,1.5312297,0};
+					};
+					side="West";
+					class Attributes
+					{
+					};
+					id=13;
+					type="B_helicrew_F";
+					atlOffset=50;
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=4;
+				};
+				class Links
+				{
+					items=4;
+					class Item0
+					{
+						linkID=0;
+						item0=10;
+						item1=9;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=11;
+						item1=9;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={1};
+						};
+					};
+					class Item2
+					{
+						linkID=2;
+						item0=12;
+						item1=9;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+					class Item3
+					{
+						linkID=3;
+						item0=13;
+						item1=9;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={2};
+						};
+					};
+				};
+			};
+			id=3;
+			atlOffset=50;
+		};
+		class Item2
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2032.418,58.344372,1478.4547};
+				angles[]={0,1.5312297,0};
+			};
+			side="West";
+			flags=2;
+			class Attributes
+			{
+				name="Heli1";
+				presence=0;
+			};
+			id=9;
+			type="B_Heli_Transport_03_F";
+			atlOffset=50;
+		};
+		class Item3
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2091.7402,7.2059455,1489.205};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="Truck1";
+			};
+			id=15;
+			type="B_MRAP_01_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item4
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2047.8647,7.2059455,1499.1694};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="Truck2";
+			};
+			id=16;
+			type="B_MRAP_01_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+	};
+};
