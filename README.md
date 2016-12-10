@@ -28,4 +28,8 @@ A few weeks ago a buddy asked me to write a script for a helicopter to lift and 
 
 
 ###Showcase #2
+<<<<<<< HEAD
 [![Showcase #2](https://i.ytimg.com/vi/myOga-KNvaU/sddefault.jpg)](https://www.youtube.com/watch?v=myOga-KNvaU)
+=======
+[![Showcase #2](https://i.ytimg.com/vi/myOga-KNvaU/sddefault.jpg)](https://www.youtube.com/watch?v=myOga-KNvaU)
+>>>>>>> origin/master
