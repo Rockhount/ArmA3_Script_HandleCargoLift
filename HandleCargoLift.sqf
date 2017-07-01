@@ -1,5 +1,5 @@
 /*
-	Made by Rockhount - HandleCargoLift Script v1.0
+	Made by Rockhount - HandleCargoLift Script v1.1
 	Errors will be written into the rpt and starts with "HandleCargoLift Error:"
 	Call:
 	["B_Heli_Attack_01_F", "B_Helipilot_F", [1808,1488,50], west, 50, [Truck1], [2093,1890,0], 10, [2095,1092,0], false, true, "CargoHeli1"] execVM "HandleCargoLift.sqf";
@@ -16,7 +16,7 @@
 	true = (Optional) The cargo pos gets corrected after it gets dropped, false = Cargo gets left lying.
 	"CargoHeli1" = (Optional) Variable that is assigned to the helicopter
 
-	Gemacht von Rockhount - HandleCargoLift Script v1.0
+	Gemacht von Rockhount - HandleCargoLift Script v1.1
 	Fehler werden in die RPT geschrieben und starten mit "HandleCargoLift Error:"
 	Aufruf:
 	["B_Heli_Attack_01_F", "B_Helipilot_F", [1808,1488,50], west, 50, [Truck1], [2093,1890,0], 10, [2095,1092,0], false, true, "CargoHeli1"] execVM "HandleCargoLift.sqf";
@@ -161,15 +161,15 @@ if (isServer) then
 	};
 	private _Local_var_Exit = false;
 	private _Local_var_CargoObjects = [];
-	private _Local_var_AirVehType = if ((count _this > 0) && {typeName (_this select 0) == "STRING"}) then {_this select 0} else {_Local_var_Exit = true};
-	private _Local_var_AirVehCrewType = if ((count _this > 1) && {typeName (_this select 1) == "STRING"}) then {_this select 1} else {_Local_var_Exit = true};
-	private _Local_var_SpawnPos = if ((count _this > 2) && {typeName (_this select 2) == "ARRAY"}) then {_this select 2} else {_Local_var_Exit = true};
-	private _Local_var_CrewSide = if ((count _this > 3) && {typeName (_this select 3) == "SIDE"}) then {_this select 3} else {_Local_var_Exit = true};
-	private _Local_var_FlightAltitude = if ((count _this > 4) && {typeName (_this select 4) == "SCALAR"}) then {_this select 4} else {_Local_var_Exit = true};
-	private _Local_var_RAWCargoObjects = if ((count _this > 5) && {typeName (_this select 5) == "ARRAY"}) then {_this select 5} else {_Local_var_Exit = true};
-	private _Local_var_DropPos = if ((count _this > 6) && {typeName (_this select 6) == "ARRAY"}) then {_this select 6} else {_Local_var_Exit = true};
-	private _Local_var_CargoDelTime = if ((count _this > 7) && {typeName (_this select 7) == "SCALAR"}) then {_this select 7} else {_Local_var_Exit = true};
-	private _Local_var_AirVehDelPos = if ((count _this > 8) && {typeName (_this select 8) == "ARRAY"}) then {_this select 8} else {_Local_var_Exit = true};
+	private _Local_var_AirVehType = if ((count _this > 0) && {typeName (_this select 0) == "STRING"}) then {_this select 0} else {_Local_var_Exit = true;false};
+	private _Local_var_AirVehCrewType = if ((count _this > 1) && {typeName (_this select 1) == "STRING"}) then {_this select 1} else {_Local_var_Exit = true;false};
+	private _Local_var_SpawnPos = if ((count _this > 2) && {typeName (_this select 2) == "ARRAY"}) then {_this select 2} else {_Local_var_Exit = true;false};
+	private _Local_var_CrewSide = if ((count _this > 3) && {typeName (_this select 3) == "SIDE"}) then {_this select 3} else {_Local_var_Exit = true;false};
+	private _Local_var_FlightAltitude = if ((count _this > 4) && {typeName (_this select 4) == "SCALAR"}) then {_this select 4} else {_Local_var_Exit = true;false};
+	private _Local_var_RAWCargoObjects = if ((count _this > 5) && {typeName (_this select 5) == "ARRAY"}) then {_this select 5} else {_Local_var_Exit = true;false};
+	private _Local_var_DropPos = if ((count _this > 6) && {typeName (_this select 6) == "ARRAY"}) then {_this select 6} else {_Local_var_Exit = true;false};
+	private _Local_var_CargoDelTime = if ((count _this > 7) && {typeName (_this select 7) == "SCALAR"}) then {_this select 7} else {_Local_var_Exit = true;false};
+	private _Local_var_AirVehDelPos = if ((count _this > 8) && {typeName (_this select 8) == "ARRAY"}) then {_this select 8} else {_Local_var_Exit = true;false};
 	private _Local_var_SpawnFullCrew = if ((count _this > 9) && {typeName (_this select 9) == "BOOL"}) then {_this select 9} else {false};
 	private _Local_var_AdjustPos = if ((count _this > 10) && {typeName (_this select 10) == "BOOL"}) then {_this select 10} else {true};
 	private _Local_var_VarName = if ((count _this > 11) && {typeName (_this select 11) == "STRING"}) then {_this select 11} else {""};
